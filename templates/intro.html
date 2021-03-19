@@ -1,0 +1,96 @@
+<html>
+	<head>
+	<title>Student Placement Prediction</title>
+	<style>
+		.header {
+			top:0px;
+			margin:0px;
+			left: 0px;
+			right: 0px;
+			position: fixed;
+			background: #304040;
+			color: white;
+			overflow: visible;
+			padding-bottom: 30px;
+			font-size: 2.25vw;
+			width: 100%;
+			padding-left:0px;
+			text-align: center;
+			padding-top:20px;
+		}
+		.second{
+			top:80px;
+			bottom:0px;
+			margin:0px;
+			left: 0px;
+			right: 0%;
+			position: fixed;
+			padding: 0px;
+			width: 100%;
+
+		
+
+		}
+		.img{
+			width: 900px;
+  		height: 700px;
+		}
+		.inside{
+			top:80px;
+			bottom:0px;
+			margin:0px;
+			left: 58.5%;
+			right: 0%;
+			position: fixed;
+			padding-left: 40px;
+			padding-top:8%;
+			padding-right:40px;
+			background-color:#E4EEFF;
+			font-family:Georgia, serif;
+			color:black;
+			font-size:20px;
+			text-align:justify;
+
+		}
+		.myButton{
+			  border: none;
+			  text-align: center;
+			  cursor: pointer;
+			  text-transform: uppercase;
+			  outline: none;
+			  overflow: hidden;
+			  color: #fff;
+			  font-weight: 700;
+			  font-size: 12px;
+			  background-color: #309090;
+			  padding: 10px 15px;
+			  margin: 0 auto;
+			  box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+		}
+	</style>
+	</head>
+	<body>
+		<div class="header">Student Campus Placement</div>
+		<br><br><br><br>
+		<div class="second">
+			<img class="img" src="https://storage.cloudconvert.com/tasks/c921518b-a000-41f4-b211-2be5cfca2d74/placement.jpg?AWSAccessKeyId=cloudconvert-production&Expires=1616168605&Signature=QGngvpwuuIy2bU106R4JvHao%2FV8%3D&response-content-disposition=inline%3B%20filename%3D%22placement.jpg%22&response-content-type=image%2Fjpeg">
+			<div class="inside">Placement of students is one of the most important objective
+				of an educational institution. Reputation and yearly
+				admissions of an institution invariably depend on the
+				placements it provides it students with. That is why all the
+				institutions, arduously, strive to strengthen their placement
+				department so as to improve their institution on a whole. The students can also check
+				their situation in getting placed. Given details like CGPA, Internship,
+				marks obtained in Logical questions, Grammar quiz, Coding test, the model will predict whether
+				the student will get placed or not. Also the strengths and weaknesses will be pointed out for
+				the betterment of the student.
+		<br><br><br>
+		<div style="margin-left:17%">
+		<a href="{{url_for('predict')}}"><button type="button" class="myButton" >Want to predict your status?</button></a>
+		</div>
+		</div>
+
+
+		</div>
+	</body>
+</html>
